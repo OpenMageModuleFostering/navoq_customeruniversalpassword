@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Navoq_CustomerUniversalPassword",
+    "type": "magento-module",
+    "license": "http://www.opensource.org/licenses/gpl-license.php",
+    "homepage": "",
+    "description": "This module logs you to front-end of your website as one of your customers, using a universal password.",
+    "authors": [
+    {
+        "name": "Navoq",
+        "email": "navoq.team@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

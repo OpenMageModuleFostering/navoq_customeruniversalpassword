@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>Navoq_CustomerUniversalPassword</name>
+    <version>1.0.0.0</version>
+    <stability>stable</stability>
+    <license>http://www.opensource.org/licenses/gpl-license.php</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This module logs you to front-end of your website as one of your customers, using a universal password.</summary>
+    <description>Magento doesn't display customer password in the admin panel. So the only way to know it is to change customer password itself. But it is a bad solution.&#xD;
+&#xD;
+This module logs you to front-end of your website as one of your customers, using a universal password.&#xD;
+&#xD;
+Workflow:&#xD;
+&#xD;
+- Set an universal password in the admin panel. Password is stored as MD5 hash. Nobody can't get it as plain text.&#xD;
+- Set an admin user in the admin panel. This step is needed for sending emails with a unique link for accessing to customers account.&#xD;
+- Try to log in with the universal password. An email with an unique link will be sent to the admin user, which was set in the previous step.&#xD;
+- Open the email and follow the link.</description>
+    <notes>This module logs you to front-end of your website as one of your customers, using a universal password.</notes>
+    <authors><author><name>Navoq</name><user>Navoq</user><email>navoq.team@gmail.com</email></author></authors>
+    <date>2013-01-30</date>
+    <time>21:06:42</time>
+    <contents><target name="magecommunity"><dir name="Navoq"><dir name="CustomerUniversalPassword"><dir name="Helper"><file name="Data.php" hash="864940407f0c3312b53eb97993f148e2"/><file name="Password.php" hash="7ea69bcc2ae79df89b8b66a2e4498287"/></dir><dir name="Model"><file name="Nonce.php" hash="551855d090c4ba04692746cc941afecf"/><file name="Observer.php" hash="a0162885a2e0afef7028dfc22d82d6cf"/><dir name="Resource"><dir name="Nonce"><file name="Collection.php" hash="77aecf5c55dddd0d6e4aa82e196477f5"/></dir><file name="Nonce.php" hash="ea977bc2b4321ec0383a7c4f953640a5"/><file name="Setup.php" hash="5abc759b26c3066a4e5f1c097a9bd393"/></dir><dir name="Source"><dir name="Settings"><file name="Admin.php" hash="42d003d6ed4313e2820ab048d271a041"/></dir></dir><dir name="System"><dir name="Config"><dir name="Backend"><dir name="Settings"><dir name="General"><file name="Password.php" hash="8622318db5a63b87c659907d0bd3b154"/></dir></dir></dir></dir></dir></dir><dir name="controllers"><file name="NonceController.php" hash="2f9685b72bb7a5b2e17f88ff2819dd42"/></dir><dir name="etc"><file name="adminhtml.xml" hash="d6bf3421dbcfb12b8505415089ef23fa"/><file name="config.xml" hash="6e85c7578d5b811193f5cd1502d36d15"/><file name="system.xml" hash="3b4104d0f533be5e4010e088ed1ea834"/></dir><dir name="sql"><dir name="navoq_customeruniversalpassword_setup"><file name="install-1.0.0.0.php" hash="b08f5a3ce612df3206288942a8dd9095"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Navoq_CustomerUniversalPassword.xml" hash="6e574013282c93429f882391e9da5896"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><dir name="navoq"><dir name="customer_universal_password"><file name="temporary_link.html" hash="57564c03e064ee4f325084010b205618"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
